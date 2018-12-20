@@ -32,11 +32,8 @@
         const Q = 'q=';
         var ingredient = 'chicken';
 
-        //$.get
-        //console.log
-
         
-            $.get(url + Q + ingredient + '&app_id=' + appID + '&app_key=' + appKey)
+           // $.get(url + Q + ingredient + '&app_id=' + appID + '&app_key=' + appKey)
             .done((result)=>{
                 for (var i=0;i<3;i++){                                                  // To loop through the 10 results on the page
                     console.log(result.hits[i].recipe.label);                           //  Name
