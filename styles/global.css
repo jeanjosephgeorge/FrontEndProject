@@ -1,0 +1,19 @@
+body {
+    font-family: 'Bree Serif', serif;
+    color:rgb(65, 64, 64);
+    box-sizing: content-box;
+    
+}
+nav{
+    background-color: #fff;
+    position:fixed;
+}
+footer{
+    color:rgb(65, 64, 64); 
+    background-color: #fff;          
+}
+h1 {
+    font-family: 'Bree Serif', serif;
+    color:gold;
+    text-align: center;
+}

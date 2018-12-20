@@ -1,0 +1,55 @@
+        body {
+            font-family: 'Bree Serif', serif;
+            color:rgb(65, 64, 64);
+            box-sizing: content-box;
+            
+        }
+        nav{
+            background-color: #fff;
+            position:fixed;
+        }
+        footer{
+            color:rgb(65, 64, 64); 
+            background-color: #fff;          
+        }
+        h1 {
+            font-family: 'Bree Serif', serif;
+            color:gold;
+            text-align: center;
+        }
+        .card-img-top{
+            width:100%;
+            max-width:250px;
+        }
+        .container
+        h1 {
+            font-family: 'Bree Serif', serif;
+            color:gold;
+            text-align: center;
+        }
+        .aHeadingMobile{
+            font-size:18px;
+        }
+        .media-body{
+            font-size:14px;
+        }
+
+        .cardTitle{
+            font-size:20px;
+        }
+        a{
+            color:rgb(65, 64, 64);            
+        }
+        .days{
+            width:14%;
+            height:10vh;;
+            text-align: center;
+            background-color: rgba(218, 165, 32, 0.2);
+            border-right:.5px solid gray;
+       }
+       .card{
+        margin-bottom:5px;
+       }
+       .card-text{
+        font-size:14px;
+       }
