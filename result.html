@@ -21,6 +21,7 @@
 </head>
 
 <body>
+    <!-- Nav Bar-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand text-dark" href="#">LeftoveRemix</a>
@@ -48,13 +49,15 @@
             </div>
         </div>
     </nav>
-        <!-- Page Heading -->
-
-    <!-- Page Content -->
-    <div class="container pt-5">
-        <h1 class='mt-4 mb-4'>Lets plan your meal</h1>    
-        <div class="col col-12 d-sm-block d-md-none">
-            <div class="media p-2">
+    
+    <!-- ==================================== -->
+    <!-- Page Content Start from here -->
+    <!-- Code Blocks for Small Devices and Code Blocks for Middle/Large Devices -->
+    <div class="container-fluid pt-5">
+        <h1 class='mt-4 mb-4'>Lets plan your meal</h1>
+        <div  id='resultForSmall' class="col col-12 d-sm-block d-md-none">
+        <!-- for small devices API datas reflects from here-->
+            <!-- <div class="media p-2">
                 <a href="#"><img class="mr-3" width="100" src="https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-image.myrecipes.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F1506120378%2FMR_0917170472.jpg%3Fitok%3Ddiiq3H44&w=1000&c=sc&poi=face&q=70"
                         alt="Generic placeholder image"></a>
                 <div class="media-body">
@@ -64,244 +67,69 @@
                             <i class="fas fa-folder-plus" id="plus1"></i>
                         </span>
                     </div>
-                    <div class=''>**** TRUNCATE TEXT without inline or block</div>
+                    <div class='media-text'>
+                        <ul class='list-unstyled'>
+                            <li></li>
+                        </ul> 
+                            **** TRUNCATE TEXT without inline or block</div>
                 </div>
-            </div>
-            <div class="media p-2">
-                <a href="#"><img class="mr-3" width="100" src="https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-image.myrecipes.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F1506120378%2FMR_0917170472.jpg%3Fitok%3Ddiiq3H44&w=1000&c=sc&poi=face&q=70"
-                        alt="Generic placeholder image"></a>
-                <div class="media-body">
-                    <div class="media-header">
-                        <a href="#" class='aHeadingMobile'>Media heading</a><span class="float-right d-inline-block"><i
-                                class="fas fa-folder-plus"></i></span></div>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, eos?
-                </div>
-            </div>
-            <div class="media p-2">
-                <a href="#"><img class="mr-3" width="100" src="https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-image.myrecipes.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F1506120378%2FMR_0917170472.jpg%3Fitok%3Ddiiq3H44&w=1000&c=sc&poi=face&q=70"
-                        alt="Generic placeholder image"></a>
-                <div class="media-body">
-                    <div class="media-header">
-                        <a href="#" class='aHeadingMobile'>Media heading</a><span class="float-right d-inline-block"><i
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, eos?
-                            class="fas fa-folder-plus"></i></span></div>
-                </div>
-            </div>
-            <div class="media p-2">
-                <a href="#"><img class="mr-3" width="100" src="https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-image.myrecipes.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F1506120378%2FMR_0917170472.jpg%3Fitok%3Ddiiq3H44&w=1000&c=sc&poi=face&q=70"
-                        alt="Generic placeholder image"></a>
-                <div class="media-body">
-                    <div class="media-header">
-                        <a href="#" class='aHeadingMobile'>Media heading</a><span class="float-right d-inline-block"><i
-                                class="fas fa-folder-plus"></i></span></div>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, eos?
-                </div>
-            </div>
-            <div class="media p-2">
-                <a href="#"><img class="mr-3" width="100" src="https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-image.myrecipes.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F1506120378%2FMR_0917170472.jpg%3Fitok%3Ddiiq3H44&w=1000&c=sc&poi=face&q=70"
-                        alt="Generic placeholder image"></a>
-                <div class="media-body">
-                    <div class="media-header">
-                        <a href="#" class='aHeadingMobile'>Media heading</a><span class="float-right d-inline-block"><i
-                                class="fas fa-folder-plus"></i></span></div>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, eos?
-                </div>
-            </div>
-            <div class="media p-2">
-                <a href="#"><img class="mr-3" width="100" src="https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-image.myrecipes.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F1506120378%2FMR_0917170472.jpg%3Fitok%3Ddiiq3H44&w=1000&c=sc&poi=face&q=70"
-                        alt="Generic placeholder image"></a>
-                <div class="media-body">
-                    <div class="media-header">
-                        <a href="#" class='aHeadingMobile'>Media heading</a><span class="float-right d-inline-block"><i
-                                class="fas fa-folder-plus"></i></span></div>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, eos?
-                </div>
-            </div>
-            <div class="media p-2">
-                <a href="#"><img class="mr-3" width="100" src="https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-image.myrecipes.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F1506120378%2FMR_0917170472.jpg%3Fitok%3Ddiiq3H44&w=1000&c=sc&poi=face&q=70"
-                        alt="Generic placeholder image"></a>
-                <div class="media-body">
-                    <div class="media-header">
-                        <a href="#" class='aHeadingMobile'>Media heading</a><span class="float-right d-inline-block"><i
-                                class="fas fa-folder-plus"></i></span></div>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, eos?
-                </div>
-            </div>
-            <div class="media p-2">
-                <a href="#"><img class="mr-3" width="100" src="https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-image.myrecipes.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F1506120378%2FMR_0917170472.jpg%3Fitok%3Ddiiq3H44&w=1000&c=sc&poi=face&q=70"
-                        alt="Generic placeholder image"></a>
-                <div class="media-body">
-                    <div class="media-header">
-                        <a href="#" class='aHeadingMobile'>Media heading</a><span class="float-right d-inline-block"><i
-                                class="fas fa-folder-plus"></i></span></div>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, eos?
-                </div>
-            </div>
+            </div> -->
         </div>
 
-        <!-- Beggining of medium and large viewport -->
-        <div class="row">
-            <div class="col-lg-2 col-md-3 d-none d-sm-none d-md-block">
-                <div class="card">
-                    <a href="#"><img class="card-img-top" src="https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-image.myrecipes.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F1506120378%2FMR_0917170472.jpg%3Fitok%3Ddiiq3H44&w=1000&c=sc&poi=face&q=70"
-                            alt=""></a>
-                    <div class="card-body ">
-                        <h6 class="card-title">
-                            <a href="#">Spinitch Soup</a><span class="float-right d-inline-block"><i class="fas fa-folder-plus">                            
-                                <div class="dropdown-menu drop">
-                                    <a class="dropdown-item" href="#">Monday</a>
-                                    <a class="dropdown-item" href="#">Tuesday</a>
-                                    <a class="dropdown-item" href="#">Wednesday</a>
-                                    <a class="dropdown-item" href="#">Thursday</a>
-                                    <a class="dropdown-item" href="#">Friday</a>
-                                    <a class="dropdown-item" href="#">Saturday</a>
-                                    <a class="dropdown-item" href="#">Sunday</a>
+        <!-- ==================================== -->
+        <!-- Beggining of medium and large devices -->
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Side Nav that shows Folders -->
+                <div class="col-lg-2 col-md-2 d-none d-sm-none d-md-block shadow-sm">
+                    <div class="sidemenu">
+                        <div><a href='#'><i class="fas fa-folder mr-2"></i>Monday</a></div>
+                        <div><a href='#'><i class="fas fa-folder mr-2"></i>Tuesday</a></div>
+                        <div><a href='#'><i class="fas fa-folder mr-2"></i>Wednesday</a></div>
+                        <div><a href='#'><i class="fas fa-folder mr-2"></i>Thursday</a></div>
+                        <div><a href='#'><i class="fas fa-folder mr-2"></i>Friday</a></div>
+                        <div><a href='#'><i class="fas fa-folder mr-2"></i>Saturday</a></div>
+                        <div><a href='#'><i class="fas fa-folder mr-2"></i>Sunday</a></div>
+                    </div>
+                </div>
+                <!-- Recipes for medium and large devices start from here -->
+                <div class="col-lg-10 col-md-10 d-none d-sm-none d-md-block right">
+                    <div class="row" id='rowsForBigGuys'>
+                        <!-- APIs data will be appended from here -->
+                        <!-- <div class="col-lg-2 col-md-2 d-none d-sm-none d-md-block">
+                            <div class="card border border-0 ">
+                                <a href="#">
+                                    <img class="card-img-top rounded" src="https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-image.myrecipes.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F1506120378%2FMR_0917170472.jpg%3Fitok%3Ddiiq3H44&w=1000&c=sc&poi=face&q=70"
+                                        alt=""></a>
+                                <div class="card-body">
+                                    <div class='card-title d-flex justify-content-center pt-2'>
+                                        <a class ="card-title" href="#">Spinitch Soup mix with veggei</a>
+
+
+                                        <div class="dropdown">
+                                            <a class="" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                <span><i class="fas fa-folder-plus"></i></span>
+                                            </a>
+                                            <div class="dropdown-menu drop" data-toggle="dropdown" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Monday</a>
+                                                <a class="dropdown-item" href="#">Tuesday</a>
+                                                <a class="dropdown-item" href="#">Wednesday</a>
+                                                <a class="dropdown-item" href="#">Thursday</a>
+                                                <a class="dropdown-item" href="#">Friday</a>
+                                                <a class="dropdown-item" href="#">Saturday</a>
+                                                <a class="dropdown-item" href="#">Sunday</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        Iusto, laborum.</p>
                                 </div>
-                            </i></span>
-                        </h6>
-                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, laborum.</p>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
-
-            <div class="col-lg-2 col-md-3 d-none d-sm-none d-md-block">
-                <div class="card">
-                    <a href="#"><img class="card-img-top" src="https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-image.myrecipes.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F1506120378%2FMR_0917170472.jpg%3Fitok%3Ddiiq3H44&w=1000&c=sc&poi=face&q=70"
-                            alt=""></a>
-                    <div class="card-body">
-                        <h6 class="card-title">
-                            <a href="#">Spinitch Soup</a><span class="float-right d-inline-block"><i class="fas fa-folder-plus"></i></span>
-                        </h6>
-                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, laborum.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 d-none d-sm-none d-md-block">
-                <div class="card">
-                    <a href="#"><img class="card-img-top" src="https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-image.myrecipes.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F1506120378%2FMR_0917170472.jpg%3Fitok%3Ddiiq3H44&w=1000&c=sc&poi=face&q=70"
-                            alt=""></a>
-                    <div class="card-body">
-                        <h6 class="card-title">
-                            <a href="#">Spinitch Soup</a><span class="float-right d-inline-block"><i class="fas fa-folder-plus"></i></span>
-                        </h6>
-                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, laborum.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-2 col-md-3 d-none d-sm-none d-md-block mb-2">
-                <div class="card">
-                    <a href="#"><img class="card-img-top" src="https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-image.myrecipes.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F1506120378%2FMR_0917170472.jpg%3Fitok%3Ddiiq3H44&w=1000&c=sc&poi=face&q=70"
-                            alt=""></a>
-                    <div class="card-body">
-                        <h6 class="card-title">
-                            <a href="#">Spinitch Soup</a><span class="float-right d-inline-block"><i class="fas fa-folder-plus"></i></span>
-                        </h6>
-                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, laborum.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 d-none d-sm-none d-md-block mb-2">
-                <div class="card">
-                    <a href="#"><img class="card-img-top" src="https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-image.myrecipes.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F1506120378%2FMR_0917170472.jpg%3Fitok%3Ddiiq3H44&w=1000&c=sc&poi=face&q=70"
-                            alt=""></a>
-                    <div class="card-body">
-                        <h6 class="card-title">
-                            <a href="#">Spinitch Soup</a><span class="float-right d-inline-block"><i class="fas fa-folder-plus"></i></span>
-                        </h6>
-                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, laborum.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-2 col-md-3 d-none d-sm-none d-md-block mb-2">
-                <div class="card">
-                    <a href="#"><img class="card-img-top" src="https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-image.myrecipes.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F1506120378%2FMR_0917170472.jpg%3Fitok%3Ddiiq3H44&w=1000&c=sc&poi=face&q=70"
-                            alt=""></a>
-                    <div class="card-body">
-                        <h6 class="card-title">
-                            <a href="#">Spinitch Soup</a><span class="float-right d-inline-block"><i class="fas fa-folder-plus"></i></span>
-                        </h6>
-                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, laborum.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-lg-2 col-md-3 d-none d-sm-none d-md-block">
-                    <div class="card">
-                        <a href="#"><img class="card-img-top" src="https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-image.myrecipes.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F1506120378%2FMR_0917170472.jpg%3Fitok%3Ddiiq3H44&w=1000&c=sc&poi=face&q=70"
-                                alt=""></a>
-                        <div class="card-body">
-                            <h6 class="card-title">
-                                <a href="#">Spinitch Soup</a><span class="float-right d-inline-block"><i class="fas fa-folder-plus"></i></span>
-                            </h6>
-                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, laborum.</p>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="col-lg-2 col-md-3 d-none d-sm-none d-md-block">
-                    <div class="card">
-                        <a href="#"><img class="card-img-top" src="https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-image.myrecipes.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F1506120378%2FMR_0917170472.jpg%3Fitok%3Ddiiq3H44&w=1000&c=sc&poi=face&q=70"
-                                alt=""></a>
-                        <div class="card-body">
-                            <h6 class="card-title">
-                                <a href="#">Spinitch Soup</a><span class="float-right d-inline-block"><i class="fas fa-folder-plus"></i></span>
-                            </h6>
-                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, laborum.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-3 d-none d-sm-none d-md-block">
-                    <div class="card">
-                        <a href="#"><img class="card-img-top" src="https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-image.myrecipes.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F1506120378%2FMR_0917170472.jpg%3Fitok%3Ddiiq3H44&w=1000&c=sc&poi=face&q=70"
-                                alt=""></a>
-                        <div class="card-body">
-                            <h6 class="card-title">
-                                <a href="#">Spinitch Soup</a><span class="float-right d-inline-block"><i class="fas fa-folder-plus"></i></span>
-                            </h6>
-                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, laborum.</p>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="col-lg-2 col-md-3 d-none d-sm-none d-md-block mb-2">
-                    <div class="card">
-                        <a href="#"><img class="card-img-top" src="https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-image.myrecipes.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F1506120378%2FMR_0917170472.jpg%3Fitok%3Ddiiq3H44&w=1000&c=sc&poi=face&q=70"
-                                alt=""></a>
-                        <div class="card-body">
-                            <h6 class="card-title">
-                                <a href="#">Spinitch Soup</a><span class="float-right d-inline-block"><i class="fas fa-folder-plus"></i></span>
-                            </h6>
-                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, laborum.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-3 d-none d-sm-none d-md-block mb-2">
-                    <div class="card">
-                        <a href="#"><img class="card-img-top" src="https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-image.myrecipes.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F1506120378%2FMR_0917170472.jpg%3Fitok%3Ddiiq3H44&w=1000&c=sc&poi=face&q=70"
-                                alt=""></a>
-                        <div class="card-body">
-                            <h6 class="card-title">
-                                <a href="#">Spinitch Soup</a><span class="float-right d-inline-block"><i class="fas fa-folder-plus"></i></span>
-                            </h6>
-                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, laborum.</p>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="col-lg-2 col-md-3 d-none d-sm-none d-md-block mb-2">
-                    <div class="card">
-                        <a href="#"><img class="card-img-top" src="https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-image.myrecipes.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F1506120378%2FMR_0917170472.jpg%3Fitok%3Ddiiq3H44&w=1000&c=sc&poi=face&q=70"
-                                alt=""></a>
-                        <div class="card-body">
-                            <h6 class="card-title">
-                                <a href="#">Spinitch Soup</a><span class="float-right d-inline-block"><i class="fas fa-folder-plus"></i></span>
-                            </h6>
-                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, laborum.</p>
-                        </div>
-                    </div>
-                </div>
         </div>
     </div>
     <!-- /.container -->
@@ -318,19 +146,15 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>        
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-    <script>
-    $(function(){
-        $('#plus1').click((e)=>{
-            $(this).dropdown('toggle')
-        })
-    })
-    </script>
+    <script src='scripts/result.js'></script>
 </body>
 
 </html>

@@ -1,57 +1,56 @@
-        body {
-            font-family: 'Bree Serif', serif;
-            color:rgb(65, 64, 64);
-            box-sizing: content-box;
-        }
-        nav{
-            background-color: #fff;
-            position:fixed;
-        }
-        .drop{
+        .drop {
             display: none;
         }
-        footer{
-            color:rgb(65, 64, 64); 
-            background-color: #fff;          
-        }
-        h1 {
-            font-family: 'Bree Serif', serif;
-            color:gold;
-            text-align: center;
-        }
-        .card-img-top{
-            width:100%;
-            max-width:250px;
-        }
-        .container
-        h1 {
-            font-family: 'Bree Serif', serif;
-            color:gold;
-            text-align: center;
-        }
-        .aHeadingMobile{
-            font-size:18px;
-        }
-        .media-body{
-            font-size:14px;
+
+        .card-img-top {
+            width: 100%;
+            max-width: 250px;
         }
 
-        .cardTitle{
-            font-size:20px;
-        }
-        a{
-            color:rgb(65, 64, 64);            
-        }
-        .days{
-            width:14%;
-            height:10vh;;
+        .days {
+            width: 14%;
+            height: 10vh;
             text-align: center;
             background-color: rgba(218, 165, 32, 0.2);
-            border-right:.5px solid gray;
-       }
-       .card{
-        margin-bottom:5px;
-       }
-       .card-text{
-        font-size:14px;
-       }
+            border-right: .5px solid gray;
+        }
+
+        .card {
+            margin-bottom: 5px;
+        }
+
+        .card-text {
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .media-text {
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .height {
+            position: fixed;
+            font-size: 16px;
+            padding-left: 10px;
+            min-width: 180px;
+            max-width: 180px;
+        }
+
+        .card-body {
+            padding: 5px;
+        }
+
+        .fa-folder-plus {
+            font-size: 1.3rem;
+        }
+
+        .sidemenu {
+            line-height: 3rem;
+            padding: 20px;
+        }
+
+        .aHeadingMobile{
+            font-size:16px;
+            font-weight: bold;
+        }
