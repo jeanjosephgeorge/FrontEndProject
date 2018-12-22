@@ -1,35 +1,48 @@
+/* CSS FOR LANDING PAGE */
+
 body {
     background-color: #fff;
   }
-  
+
+/* -- for md to large devices */
+
   #landing-header {
     z-index: 1;
     position: relative;
     text-align: center;
     padding-top: 40vh;
   }
-  .container{
-      margin:0;
-      padding:0;
-  }
-  /* .overlay{
-    background-color: rgba(255, 255, 255, 0.1);
-    flex:1;
-    z-index:2;
-    opacity:.;
-    height:200vh;
-  } */
-
   #landing-header h1 {
     font-size:60px;
     color: rgb(236, 233, 233);
     text-shadow: 2px 2px #666;
   }
+
+  /* -- for small devices */
+
+  #landing-header-sm {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    padding-top: 20vh;
+  }
+
+  #landing-header-sm h1 {
+    font-size:50px;
+    color: rgb(236, 233, 233);
+    text-shadow: 2px 2px #666;
+  }
+
+/* All other settings for landing page */
+  .container{
+    margin:0;
+    padding:0;
+}
   .btn{
     background-color: #f1c40f;
     border: none;
     width:150px;
-    margin-right:20px;
+    margin: 10px 20px;
   }
 
   .slideshow { 

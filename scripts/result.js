@@ -5,6 +5,7 @@ $(function () {
     const Q = 'q=';
     var ingredient = 'chicken';
 
+    $("img.checkableGroup1").imgCheckbox();
     // ==========ACCESS TO API  ===================
     $.get(url + Q + ingredient + '&app_id=' + appID + '&app_key=' + appKey)
         .done((result) => {
@@ -17,55 +18,6 @@ $(function () {
                 let cookingTime = (result.hits[i].recipe.totalTime !== '' ? result.hits[i].recipe.totalTime :"")+' Minutes';
                 let servingSize = (result.hits[i].recipe.yield !== '' ?result.hits[i].recipe.yield : "")+' Servings';
                 let noOfIngre = (result.hits[i].recipe.ingredientLines.length >0 ? result.hits[i].recipe.ingredientLines.length : "")+' Ingredients';
-
-                // ======= CREATE DROPDOWNS==
-                let $divDropdown = $('<div>', {"class": "dropdown"});
-                let $aDropdown = $('<a>', {
-                    "id": 'dropdownMenuButton' + i,
-                    "data-toggle": "dropdown",
-                    "aria-haspopup": 'true',
-                    "aria-expanded": 'false'
-                });
-                let $divDropdownMenu = $('<div>', {
-                    "class": "dropdown-menu drop",
-                    "data-toggle": "dropdown",
-                    "aria-labelledby": "dropdownMenuButton" + i
-                })
-                let $aDropdownItemsMon = $('<a>', {
-                    "class": "dropdown-item",
-                    "href": '#',
-                    "text": 'Monday'
-                })
-                let $aDropdownItemsTue = $('<a>', {
-                    "class": "dropdown-item",
-                    "href": '#',
-                    "text": 'Tuesday'
-                })
-                let $aDropdownItemsWed = $('<a>', {
-                    "class": "dropdown-item",
-                    "href": '#',
-                    "text": 'Wednesday'
-                })
-                let $aDropdownItemsThu = $('<a>', {
-                    "class": "dropdown-item",
-                    "href": '#',
-                    "text": 'Thursday'
-                })
-                let $aDropdownItemsFri = $('<a>', {
-                    "class": "dropdown-item",
-                    "href": '#',
-                    "text": 'Friday'
-                })
-                let $aDropdownItemsSat = $('<a>', {
-                    "class": "dropdown-item",
-                    "href": '#',
-                    "text": 'Satday'
-                })
-                let $aDropdownItemsSun = $('<a>', {
-                    "class": "dropdown-item",
-                    "href": '#',
-                    "text": 'Sunday'
-                })
                 
                 /* === elements for small  */
                 //------- variables for elements for small devices(MEDIA)-------
@@ -75,6 +27,7 @@ $(function () {
                 let $imgMedia = $('<img>', {
                     "class": 'mr-3',
                     "width": '100',
+                    "name":dishName,
                     "src": imageUrl,
                     'alt': 'Dish image'
                 });
@@ -93,22 +46,22 @@ $(function () {
 
                 /* === elements for medium and Large(  */
                 //------ variables for elements for medium and Large(CARD)------
-                let $divCardCol = $('<div>', {'class': 'col-lg-2 col-md-2 d-none d-sm-none d-md-block'});
+                let $divCardCol = $('<div>', {'class': 'col-lg-2 col-md-3 d-none d-sm-none d-md-block'});
                 let $divCardMain = $('<div>', {'class': 'card border border-0'});
-                let $aCardImg = $('<a>', {'href': recipeUrl});
                 let $imgCard = $('<img>', {
                     "class": 'card-img-top rounded',
                     "src": imageUrl,
-                    'alt': 'Dish image'
+                    'name': 'Dish image',
+                    'id' : 'img'+i
                 });
                 let $divCardBody = $('<div>', {"class": 'card-body'});
-                let $divCardTitle = $('<div>', {"class": 'card-title d-flex pt-2'});
+                let $divCardTitle = $('<div>', {"class": 'card-title pt-2'});
                 let $aCardTitle = $('<a>', {
                     'class': 'card-title',
                     'href': recipeUrl,
                     'text': dishName
                 });
-                let $ulLarge = $('<ul>',{'class':'list-unstyled'})
+                let $ulLarge = $('<ul>',{'class':'list-unstyled card-text'})
                 $ulLarge.append("<li>"+cookingTime+"</li>"+"<li>"+noOfIngre+"</li>"+"<li>"+servingSize+"</li>")
 
                 // append for small devices (MEDIA)
@@ -127,12 +80,13 @@ $(function () {
                 $divDropdown.append($divDropdownMenu);
 
                 // ---- append for med to large (CARD)
-                $aCardImg.append($imgCard);
+                // $aCardImg.append($imgCard);
+                // $divCardTitle.append($divDropdown);
+                // $divCardMain.append($aCardImg);
                 $divCardTitle.append($aCardTitle);
-                $divCardTitle.append($divDropdown);
                 $divCardBody.append($divCardTitle);
                 $divCardBody.append($ulLarge);
-                $divCardMain.append($aCardImg);
+                $divCardMain.append($imgCard);
                 $divCardMain.append($divCardBody);
                 $divCardCol.append($divCardMain);
                 $('#rowsForBigGuys').append($divCardCol)
