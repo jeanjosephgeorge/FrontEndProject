@@ -1,10 +1,11 @@
 /* ===== CSS WORKS FOR RESULT PAGE ===== */
+
 /* button hover work */
 #finished{
-    background-color: tomato;
-    border: 3px solid tomato;
+    background-color: #fff;
+    border: 5px solid rgb(236, 205, 25);
     width:280px;
-    color:rgba(255, 255, 255);
+    color:rgb(236, 205, 25);
     font-size: 1.3rem;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -12,15 +13,52 @@
     font-family: 'Bree Serif', serif;
     box-shadow: 0 2px 10px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);
     }
-#finished:hover span {
-    display:none;
+
+nav{
+    background-color: transparent;
+    font-family: 'Bree Serif', serif;
 }
-#finished:hover:before{
-    content:'Create Meal Plan';
+
+  .parallax {
+    position: relative;
+    /* The image used */
+    background-image: url("/imgs/result2.png");
+
+    /* Set a specific height */
+    height: 43vh;
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
 }
-#h1finished{
-    color:tomato;
-}
+
+.overlayDirection {
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    overflow: hidden;
+    top: 0px;
+    z-index: 20;
+    margin: 0;
+    width: 100%;
+    height: 43vh;
+    opacity: .2;
+    padding: 0;
+  }
+.textResults{
+    font-family: 'Bree Serif', serif;
+    width: 100%;
+    text-align: center;
+    color:rgb(65, 64, 64);
+    font-size:2rem;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
 
 .card-img-top {
     width: 100%;
@@ -45,37 +83,3 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* ==== TO BE DELEteD */
-/* .drop {
-    display: none;
-} */
-
-.days {
-    width: 14%;
-    height: 10vh;
-    text-align: center;
-    background-color: rgba(218, 165, 32, 0.2);
-    border-right: .5px solid gray;
-}
-
-.height {
-    position: fixed;
-    font-size: 16px;
-    padding-left: 10px;
-    min-width: 180px;
-    max-width: 180px;
-}
-
-.fa-folder-plus {
-    font-size: 1.3rem;
-}
-
-.sidemenu {
-    line-height: 3rem;
-    padding: 20px;
-}
-
-.aHeadingMobile{
-    font-size:16px;
-    font-weight: bold;
-}

@@ -6,11 +6,11 @@ body {
 a{
     color:rgb(65, 64, 64);            
 }
-nav{
+/* nav{
     background-color: #fff;
     position:fixed;
     font-family: 'Bree Serif', serif;
-}
+} */
 footer{
     color:rgb(65, 64, 64); 
     background-color: #fff;          
