@@ -22,11 +22,17 @@ $(function(){
     });
 
     $('#submitButton').on('click',function(){
+        let ingredients = '';
         for (var j=0; j<(('#mainField ul li').length);j++){
-        var li = $('#mainField ul li')[j];
-        var text = li.innerText;
-        console.log(text);
+            var li = $('#mainField ul li')[j];
+            if (li !== undefined){
+                var text = li.innerText;
+                ingredients += text;
+                ingredients += ','
         }
+    }
+    ingredients = ingredients.slice(0,-1);
+    console.log(ingredients);
     });
 
     $('#mainUl').on('click','li',function(){
