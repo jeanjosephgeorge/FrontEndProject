@@ -21,9 +21,13 @@ $(function(){
         }
     });
 
-    #('#submitButton').on('click','ul',function(){
-        
-    })
+    $('#submitButton').on('click',function(){
+        for (var j=0; j<(('#mainField ul li').length);j++){
+        var li = $('#mainField ul li')[j];
+        var text = li.innerText;
+        console.log(text);
+        }
+    });
 
     $('#mainUl').on('click','li',function(){
         $(this).toggleClass('completed');
