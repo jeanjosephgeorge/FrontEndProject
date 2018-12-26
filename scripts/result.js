@@ -7,11 +7,15 @@ $(function () {
 
     const Q = 'q=';
     var ingredient = 'chicken';
+    var selections = [{
+        "recipeName": "",
+        "recipeUrl":""
+    }]
 
     // ==========ACCESS TO API  ===================
     $.get(url + Q + ingredient + '&app_id=' + appID + '&app_key=' + appKey)
         .done((result) => {
-            for (var i = 0; i < 3; i++) { // To loop through the 10 results on the page
+            for (let i = 0; i < 3; i++) { // To loop through the 10 results on the page
 
                 // if data exist, put in variables
                 let recipeUrl = (result.hits[i].recipe.url !== '' ? result.hits[i].recipe.url : "");
@@ -39,7 +43,6 @@ $(function () {
                 });
                 let $ulLarge = $('<ul>',{'class':'list-unstyled card-text'})
                 $ulLarge.append("<li>"+cookingTime+"</li>"+"<li>"+noOfIngre+"</li>"+"<li>"+servingSize+"</li>")
-
                 // ---- append for med to large (CARD)
                 $divCardTitle.append($aCardTitle);
                 
@@ -48,29 +51,19 @@ $(function () {
 
                 $divCardMain.append($imgCard);
                 $divCardMain.append($divCardBody);
-
                 $divCardCol.append($divCardMain);
                 $('#resultsForBigGuys').append($divCardCol)
             }
+            // jquery plugin image checkbox
+            $("img").imgCheckbox();
 
+        }) // End of GET
 
-            // $.get(url + Q + ingredient + '&app_id=' + appID + '&app_key=' + appKey)
-            // .done((result)=>{
-            //     for (var i=0;i<3;i++){                                                  // To loop through the 10 results on the page
-            //         console.log(result.hits[i].recipe.label);                           //  Name
-            //         console.log(result.hits[i].recipe.url);                             //  Link to site
-            //         console.log(result.hits[i].recipe.image);                           //  Image
-            //         console.log(result.hits[i].recipe.totalTime)                        // Total Cooking Time
-            //         console.log(result.hits[i].recipe.ingredientLines.length);                        // Total Cooking Time
-            //         console.log('This recipe feeds '+result.hits[i].recipe.yield);      //  Number that are fed
-            //     }
+        $('#finished').click(event =>{
 
-            }) // End of GET
-
-//        $("img").imgCheckbox();
-    
+        })
+                
 }); // End of Script
-
 
 
 // ======For future implementation ============

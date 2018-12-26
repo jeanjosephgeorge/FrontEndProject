@@ -51,33 +51,224 @@
     </nav>
 
     <section class="main">
-      <div class="container">
-        <div class="row">
+        <div class="container">
+            <div class="row d-flex justify-content-between list-inline">
+                1. Drag and Drop for meal schedule
+                <div class="col-12 m-1 bg-warning rounded"  ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <ul class="list-unstyled list-inline">
+                        <li class='list-inline-item' style="max-width: 100px;">
+                            <img class="card-img-top rounded" src="https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-image.myrecipes.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F1506120378%2FMR_0917170472.jpg%3Fitok%3Ddiiq3H44&w=1000&c=sc&poi=face&q=70"
+                            alt="" id='test1' draggable="true" ondragstart="drag(event)" id="drag1">
+                        </li>
+
+                                
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!-- weekedays start -->
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-stretch text-white m-1 p-1">
+                <!-- <div class="row d-flex justify-content-between text-center"> -->
+                <div class="col text-white text-center">
+                    <h5 class='text-center pt-2'>
+                        <img src="https://img.icons8.com/wired/64/000000/monday.png">
+                    </h5>
+                    <div class="card text-white bg-warning mb-3">
+                        <div class="card-header">Breakfast</div>
+                        <div class="card-body" id='mon-breakfast' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-warning mb-3">
+                        <div class="card-header">Lunch</div>
+                        <div class="card-body" id='monday-lunch' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-warning mb-3">
+                        <div class="card-header">Dinner</div>
+                        <div class="card-body" id='monday-dinner' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col text-white text-center">
+                    <h5 class='text-center pt-2'>
+                        <img src="https://img.icons8.com/wired/64/000000/tuesday.png">
+                    </h5>
+                    <div class="card text-white bg-warning mb-3">
+                        <div class="card-header">Breakfast</div>
+                        <div class="card-body" id='tue-breakfast' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-warning mb-3">
+                        <div class="card-header">Lunch</div>
+                        <div class="card-body" id='tue-lunch' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-warning mb-3">
+                        <div class="card-header">Dinner</div>
+                        <div class="card-body" id='tue-dinner' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col text-white text-center">
+                    <h5 class='text-center pt-2'>
+                        <img src="https://img.icons8.com/wired/64/000000/wednesday.png">
+                    </h5>
+                    <div class="card text-white bg-warning mb-3">
+                        <div class="card-header">Breakfast</div>
+                        <div class="card-body" id='wed-breakfast' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-warning mb-3">
+                        <div class="card-header">Lunch</div>
+                        <div class="card-body" id='wed-lunch' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-warning mb-3">
+                        <div class="card-header">Dinner</div>
+                        <div class="card-body" id='wed-dinner' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col text-white text-center">
+                    <h5 class='text-center pt-2'>
+                        <img src="https://img.icons8.com/wired/64/000000/thursday.png">
+                    </h5>
+                    <div class="card text-white bg-warning mb-3">
+                        <div class="card-header">Breakfast</div>
+                        <div class="card-body" id='thu-breakfast' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-warning mb-3">
+                        <div class="card-header">Lunch</div>
+                        <div class="card-body" id='thu-lunch' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-warning mb-3">
+                        <div class="card-header">Dinner</div>
+                        <div class="card-body" id='thu-dinner' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-white text-center">
+                    <h5 class='text-center pt-2'>
+                        <img src="https://img.icons8.com/wired/64/000000/friday.png">
+                    </h5>
+                    <div class="card text-white bg-warning mb-3">
+                        <div class="card-header">Breakfast</div>
+                        <div class="card-body" id='fri-breakfast' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-warning mb-3">
+                        <div class="card-header">Lunch</div>
+                        <div class="card-body" id='fri-lunch' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-warning mb-3">
+                        <div class="card-header">Dinner</div>
+                        <div class="card-body" id='fri-dinner' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col ext-white text-center">
+                    <h5 class='text-center pt-2'>
+                        <img src="https://img.icons8.com/wired/64/000000/saturday.png">
+                    </h5>
+                    <div class="card text-white bg-warning mb-3">
+                        <div class="card-header">Breakfast</div>
+                        <div class="card-body" id='sat-breakfast' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-warning mb-3">
+                        <div class="card-header">Lunch</div>
+                        <div class="card-body" id='sat-lunch' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-warning mb-3">
+                        <div class="card-header">Dinner</div>
+                        <div class="card-body" id='sat-dinner' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col text-white text-center">
+                    <h5 class='text-center pt-2'>
+                        <img src="https://img.icons8.com/wired/64/000000/sunday.png">
+                    </h5>
+                    <div class="card text-white bg-warning mb-3">
+                        <div class="card-header">Breakfast</div>
+                        <div class="card-body" id='sun-breakfast' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-warning mb-3">
+                        <div class="card-header">Lunch</div>
+                        <div class="card-body" id='sun-lunch' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-warning mb-3">
+                        <div class="card-header">Dinner</div>
+                        <div class="card-body" id='sun-dinner' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- </div>  -->
+            </div>
+
 
         </div>
-        <div class="row">
-          <div class="col-6 col-lg-2 col-md-2 col-sm-6 bg-dark">MONDAY</div>
-          <div class="col-6 col-lg-2 col-md-2 col-sm-6 bg-info">TUESDAY</div>
-          <div class="col-6 col-lg-2 col-md-2 col-sm-6 bg-warning">WEDNESDAY</div>
 
-          <div class="col-6 col-lg-2 col-md-2 col-sm-6 bg-success">THURSDAY</div>
-          <div class="col-6 col-lg-2 col-md-2 col-sm-6 bg-danger">FRIDAY</div>
-          <div class="col-6 col-lg-2 col-md-2 col-sm-6 bg-light">SATURDAY</div>
-          <div class="col-6 col-lg-2 col-md-2 col-sm-6 bg-dark">SUNDAY</div>
+
 
         </div>
-      </div>
-
     </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-    <script src="jquery.drag-drop.plugin.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/$VERSION/dragula.min.js'></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
 
-  </body>
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+
+</body>
+
 </html>
