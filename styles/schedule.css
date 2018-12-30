@@ -1,7 +1,8 @@
 
+/* Setting of selected recipies before sorting to calendar */
+
 .selectionsDivRow{
   width:100%;
-  /* background: #f1c40f8a; */
   border-radius: 5%;
 
 }
@@ -19,13 +20,16 @@
 }
 .selectedImg{
     max-width: 150px;
-    background: #f1c40f;  /* fallback for old browsers */
+    /* background: #f1c40f;  fallback for old browsers */
     border-radius: 10px;
     position:relative;
 }
 
 .card{
-    background: #f1c40f;  /* fallback for old browsers */
+    background: #fceabb;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #d8be55, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #f1c40f, #fceabb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     border:none;
     box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.58);
     margin:10px;
@@ -33,10 +37,15 @@
     color:rgb(68, 68, 68);
     font-family: 'Bree Serif', serif;
 }
+
+/* Size changes when hover to card */
 .card-body{
-  min-height:50px;
+  min-height:20px;
 }
-  
+.onHoverHeight{
+  min-height:100px;
+}  
+
 /* Selections on hover show recipe name */
   .image {
     opacity: 1;
@@ -50,6 +59,8 @@
   .textarea {
     transition: .5s ease;
     opacity: 0;
+    width:100%;
+    height:100%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -67,9 +78,9 @@
   }
   
   .text {
-    background-color: #f1c40fa6;
-    border-radius: 10%;
+    background:linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
     color:rgb(68, 68, 68);
+    border:none;
     font-family: 'Bree Serif', serif;
     font-size: 14px;
     padding:10px;
@@ -82,16 +93,25 @@
     font-family: 'Bree Serif', serif;
     width: 100px;
     color:rgb(68, 68, 68);
-    background: #FF5F6D;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    text-align: center;
+    letter-spacing: 2px;
+    background: #fceabb;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #d8be55, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #f1c40f, #fceabb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      text-align: center;
     border-radius: 3px;
+    width:280px;
+
 }
 a.printBtn:hover{
-  background: #F2994A;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, rgb(241, 208, 109), #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.58);
+  background: #fceabb;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #d8be55, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #f1c40f, #fceabb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.58);
 }
-
+/* After drop receipe, display recipe name */
+.recipeName{
+  background-color:transparent;
+}
+.showWhenPrint{
+  display: none;
+}

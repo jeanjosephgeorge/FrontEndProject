@@ -66,171 +66,170 @@
             <a class="printBtn p-1" id='printButton' onclick="printDiv('printableArea')"><i class="fas fa-print mr-2"></i>Print</a>
         </div>
         <!-- weekedays start -->
-        <div class="container-fluid" id ="printableArea">
-            <div class="row d-flex justify-content-stretch text-white m-1 p-1">
-                <div class="col text-white text-center">
+        <div class="container-fluid m-1" id ="printableArea">
+            <div class="row">
+                <div class="col col-md col-sm text-center p-0">
                     <h5 class='text-center pt-2'>
                         <img src="https://img.icons8.com/wired/64/000000/monday.png">
                     </h5>
                     <div class="card">
                         <div class="card-header bg-transparent p-0"> Breakfast</div>
-                        <div class="card-body p-0"  id='mon-breakfast' ondrop="drop(event)" ondragover="allowDrop(event)" >
+                        <div class="card-body p-0"  id='mon-breakfast' ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="changeBack(event)">
                         </div>
-        
                     </div>
 
                     <div class="card">
                         <div class="card-header bg-transparent p-0"> Lunch</div>
-                        <div class="card-body p-0" id='mon-lunch' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="card-body p-0" id='mon-lunch' ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="changeBack(event)">
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="card-header bg-transparent p-0"> Dinner</div>
-                        <div class="card-body p-0" id='mon-dinner' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="card-body p-0" id='mon-dinner' ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="changeBack(event)">
                         </div>
                     </div>
                 </div>
 
-                <div class="col text-center">
+                <div class="col col-md col-sm text-center p-0">
                     <h5 class='text-center pt-2'>
                         <img src="https://img.icons8.com/wired/64/000000/tuesday.png">
                     </h5>
                     <div class="card">
                         <div class="card-header bg-transparent p-0"> Breakfast</div>
-                        <div class="card-body p-0" id='tue-breakfast' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="card-body p-0" id='tue-breakfast' ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="changeBack(event)">
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="card-header bg-transparent p-0"> Lunch</div>
-                        <div class="card-body p-0" id='tue-lunch' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="card-body p-0" id='tue-lunch' ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="changeBack(event)">
                         
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="card-header bg-transparent p-0"> Dinner</div>
-                        <div class="card-body p-0" id='tue-dinner' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="card-body p-0" id='tue-dinner' ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="changeBack(event)">
                         </div>
                     </div>
                 </div>
 
 
-                <div class="col text-white text-center">
+                <div class="col col-md col-sm text-center p-0">
                     <h5 class='text-center pt-2'>
                         <img src="https://img.icons8.com/wired/64/000000/wednesday.png">
                     </h5>
                     <div class="card">
                         <div class="card-header bg-transparent p-0"> Breakfast</div>
-                        <div class="card-body p-0" id='wed-breakfast' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="card-body p-0" id='wed-breakfast' ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="changeBack(event)">
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="card-header bg-transparent p-0"> Lunch</div>
-                        <div class="card-body p-0" id='wed-lunch' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="card-body p-0" id='wed-lunch' ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="changeBack(event)">
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="card-header bg-transparent p-0"> Dinner</div>
-                        <div class="card-body p-0" id='wed-dinner' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="card-body p-0" id='wed-dinner' ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="changeBack(event)">
                         </div>
                     </div>
                 </div>
 
-                <div class="col text-white text-center">
+                <div class="col col-md col-sm text-center p-0">
                     <h5 class='text-center pt-2'>
                         <img src="https://img.icons8.com/wired/64/000000/thursday.png">
                     </h5>
                     <div class="card">
                         <div class="card-header bg-transparent p-0"> Breakfast</div>
-                        <div class="card-body p-0" id='thu-breakfast' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="card-body p-0" id='thu-breakfast' ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="changeBack(event)">
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="card-header bg-transparent p-0">Lunch</div>
-                        <div class="card-body p-0" id='thu-lunch' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="card-body p-0" id='thu-lunch' ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="changeBack(event)">
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="card-header bg-transparent p-0"> Dinner</div>
-                        <div class="card-body p-0" id='thu-dinner' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="card-body p-0" id='thu-dinner' ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="changeBack(event)">
                         </div>
                     </div>
                 </div>
 
 
-                <div class="col text-white text-center">
+                <div class="col col-md col-sm text-center p-0">
                     <h5 class='text-center pt-2'>
                         <img src="https://img.icons8.com/wired/64/000000/friday.png">
                     </h5>
                     <div class="card">
                         <div class="card-header bg-transparent p-0"> Breakfast</div>
-                        <div class="card-body p-0" id='fri-breakfast' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="card-body p-0" id='fri-breakfast' ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="changeBack(event)">
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="card-header bg-transparent p-0">Lunch</div>
-                        <div class="card-body p-0" id='fri-lunch' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="card-body p-0" id='fri-lunch' ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="changeBack(event)">
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="card-header bg-transparent p-0"> Dinner</div>
-                        <div class="card-body p-0" id='fri-dinner' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="card-body p-0" id='fri-dinner' ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="changeBack(event)">
                         </div>
                     </div>
     
                 </div>
 
 
-                <div class="col ext-white text-center">
+                <div class="col col-md col-sm text-center p-0">
                     <h5 class='text-center pt-2'>
                         <img src="https://img.icons8.com/wired/64/000000/saturday.png">
                     </h5>
                     <div class="card">
                         <div class="card-header bg-transparent p-0"> Breakfast</div>
-                        <div class="card-body p-0" id='sat-breakfast' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="card-body p-0" id='sat-breakfast' ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="changeBack(event)">
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="card-header bg-transparent p-0">Lunch</div>
-                        <div class="card-body p-0" id='sat-lunch' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="card-body p-0" id='sat-lunch' ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="changeBack(event)">
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="card-header bg-transparent p-0"> Dinner</div>
-                        <div class="card-body p-0" id='sat-dinner' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="card-body p-0" id='sat-dinner' ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="changeBack(event)">
                         </div>
                     </div>    
                 </div>
 
-                <div class="col text-white text-center">
+                <div class="col col-md col-sm text-center p-0">
                     <h5 class='text-center pt-2'>
                         <img src="https://img.icons8.com/wired/64/000000/sunday.png">
                     </h5>
                     <div class="card">
                         <div class="card-header bg-transparent p-0"> Breakfast</div>
-                        <div class="card-body p-0" id='sun-breakfast' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="card-body p-0" id='sun-breakfast' ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="changeBack(event)">
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="card-header bg-transparent p-0">Lunch</div>
-                        <div class="card-body p-0" id='sun-lunch' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="card-body p-0" id='sun-lunch' ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="changeBack(event)">
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="card-header bg-transparent p-0"> Dinner</div>
-                        <div class="card-body p-0" id='sun-dinner' ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <div class="card-body p-0" id='sun-dinner' ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="changeBack(event)">
                         </div>
                     </div>
                 </div>
@@ -248,11 +247,7 @@
     src="https://code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
-    
-    <!-- <script
-    src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
-    integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
-    crossorigin="anonymous"></script>     -->
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
@@ -261,28 +256,30 @@
     <script src ='scripts/schedule.js'></script>
     
     <script>
-        var newDivTxtArea= document.createElement('div'),
-        newDivTxt = document.createElement('div');
 
-        newDivTxtArea.setAttribute('class','textarea');
-        newDivTxt.setAttribute('class','text');
-        newDivTxtArea.appendChild(newDivTxt);
 
+        // Drag and drop
         function allowDrop(ev) {
             ev.preventDefault();
+            ev.target.classList.add('onHoverHeight');
+        }
+
+        function changeBack(ev){
+            ev.target.classList.remove('onHoverHeight');
         }
 
         function drag(ev) {
             ev.dataTransfer.setData("text", ev.target.id);
-            console.log(ev.target.id)
         }
 
         function drop(ev) {
             ev.preventDefault();
-            var data = ev.dataTransfer.getData("text");
-            ev.target.appendChild(document.getElementById(data));
-
+            let data = ev.dataTransfer.getData("text");
+            let originEle = document.getElementById(data)
+            ev.target.appendChild(originEle);
         }
+
+        // print 
         function printDiv(divName) {
             var printContents = document.getElementById(divName).innerHTML;
             var originalContents = document.body.innerHTML;

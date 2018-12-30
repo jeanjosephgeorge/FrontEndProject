@@ -2,7 +2,6 @@ $(function() {
     var selections = JSON.parse(localStorage.myArrData);
 
     for (let i=0;i<selections.length;i++){
-        // event.preventDefault();
         // create image and append to div
         let $divSelectedImg = $('<div>', {
             "class": 'selectedImg m-2',
@@ -19,14 +18,17 @@ $(function() {
             'alt': selections[i]['recipeUrl'],
             'id':'img'+i
         });
+        let $pRecipeName =$('<p>',{
+            "class":"recipeName showWhenPrint",
+            "text":selections[i]['recipeName'],
+            "id":'pRecipeName'+i
+        });
+
         // Name of recipe on hover
-        let $divText = "<div class='textarea'><div class='text'>"+selections[i]['recipeName']+"</div></div>";
+        let $divText = "<div class='textarea'><a href='"+selections[i]['recipeUrl']+"'><div class='text'>"+selections[i]['recipeName']+"</div></a></div>";
         $divSelectedImg.append($imgCard);
         $divSelectedImg.append($divText);
+        $divSelectedImg.append($pRecipeName);
         $("#selectionTop").append($divSelectedImg);
-    }
-}) // end of jQuery
-
-
-
-                        
+    };
+}); // end of jQuery
