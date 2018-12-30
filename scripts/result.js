@@ -7,10 +7,7 @@ $(function () {
 
     const Q = 'q=';
     var ingredient = 'chicken';
-    var selections = [{
-        "recipeName": "",
-        "recipeUrl":""
-    }]
+    var selections = [];
 
     // ==========ACCESS TO API  ===================
     $.get(url + Q + ingredient + '&app_id=' + appID + '&app_key=' + appKey)
@@ -31,7 +28,8 @@ $(function () {
                 let $imgCard = $('<img>', {
                     "class": 'card-img-top rounded',
                     "src": imageUrl,
-                    'name': 'Dish image',
+                    'name': dishName,
+                    'alt': recipeUrl,
                     'id' : 'img'+i
                 });
                 let $divCardBody = $('<div>', {"class": 'card-body'});
@@ -55,50 +53,28 @@ $(function () {
                 $('#resultsForBigGuys').append($divCardCol)
             }
             // jquery plugin image checkbox
-            $("img").imgCheckbox();
-
+            $("img").imgCheckbox({
+                onclick: function(el){
+                    var isChecked = el.hasClass("imgChked"),
+                    imgEl = el.children()[0];  // the img element
+                    let checked = {
+                        recipeName: imgEl.name,
+                        recipeUrl:imgEl.alt,
+                        imageUrl:imgEl.src,
+                    }
+                    if (isChecked){
+                        selections.push(checked)
+                    }else {
+                        selections.pop(checked)
+                    }
+                }
+            });
         }) // End of GET
 
-        $('#finished').click(event =>{
+        $('#finished').on("click", event =>{
+            console.log(JSON.stringify(selections))
+            localStorage.myArrData=JSON.stringify(selections)
+        });
+        
 
-        })
-                
 }); // End of Script
-
-
-// ======For future implementation ============
-    // /* === elements for small  */
-    // //------- variables for elements for small devices(MEDIA)-------
-    // let $divMedia = $('<div>', {'class': 'media p-2'});
-    // let $aMediaImg = $('<a>', {'href': recipeUrl});
-
-    // let $imgMedia = $('<img>', {
-    //     "class": 'mr-3',
-    //     "width": '100',
-    //     "name":dishName,
-    //     "src": imageUrl,
-    //     'alt': 'Dish image'
-    // });
-    // let $divMediaBody = $('<div>', {'class': 'media-body'});
-    // let $divMediaHeader = $('<div>', {'class': 'media-header'});
-
-    // let $aMediaHeader = $('<a>', {
-    //     'href': recipeUrl,
-    //     'class': 'aMediaHeader',
-    //     'text': dishName
-    // });
-    // let spani = "<span class='float-right m-2 d-inline-block'><i class='fas fa-folder-plus' id='plus1'></i></span>"
-    // let $divMediaText = $('<div>', {'class': 'media-text'}) 
-    // let $ul = $('<ul>',{'class':'list-unstyled card-text'})
-    // $ul.append("<li>"+cookingTime+"</li>"+"<li>"+noOfIngre+"</li>"+"<li>"+servingSize+"</li>")
-
-    // // append for small devices (MEDIA)
-    // $aMediaImg.append($imgMedia);
-    // $divMediaHeader.append($aMediaHeader).append(spani);
-
-    // $divMediaBody.append($divMediaHeader);
-    // $divMediaBody.append($divMediaText).append($ul);
-
-    // $divMedia.append($aMediaImg);
-    // $divMedia.append($divMediaBody);
-    // $("#resultsForSmall").append($divMedia);

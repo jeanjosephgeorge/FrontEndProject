@@ -1,5 +1,97 @@
-.monday{
-    background-color: rgba(0, 0, 255, 0.336);
-    height:200px;
-    padding:20px
+
+.selectionsDivRow{
+  width:100%;
+  /* background: #f1c40f8a; */
+  border-radius: 5%;
+
 }
+.selectionsDivText{
+  width:100%;
+  margin:10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color:rgba(68, 68, 68, 0.534);
+  font-size: 2rem;
+}
+.selectionsDivCol{
+  min-height:100px;
+}
+.selectedImg{
+    max-width: 150px;
+    background: #f1c40f;  /* fallback for old browsers */
+    border-radius: 10px;
+    position:relative;
+}
+
+.card{
+    background: #f1c40f;  /* fallback for old browsers */
+    border:none;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.58);
+    margin:10px;
+    padding:5px;
+    color:rgb(68, 68, 68);
+    font-family: 'Bree Serif', serif;
+}
+.card-body{
+  min-height:50px;
+}
+  
+/* Selections on hover show recipe name */
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .textarea {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .selectedImg:hover .image {
+    opacity: 0.3;
+  }
+  
+  .selectedImg:hover .textarea {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #f1c40fa6;
+    border-radius: 10%;
+    color:rgb(68, 68, 68);
+    font-family: 'Bree Serif', serif;
+    font-size: 14px;
+    padding:10px;
+  }
+
+  /* print */
+  a.printBtn{
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Bree Serif', serif;
+    width: 100px;
+    color:rgb(68, 68, 68);
+    background: #FF5F6D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+    border-radius: 3px;
+}
+a.printBtn:hover{
+  background: #F2994A;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgb(241, 208, 109), #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.58);
+}
+
