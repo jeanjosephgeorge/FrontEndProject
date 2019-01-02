@@ -76,34 +76,40 @@
   }
   
   .text {
-    background:linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
+    background:linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5));
     color:rgb(68, 68, 68);
     border:none;
     font-size: 14px;
+    font-weight: bold;
     padding:10px;
   }
 
   /* print */
-  a.printBtn{
-    text-decoration: none;
-    display: inline-block;
-    width: 100px;
-    color:rgb(68, 68, 68);
-    letter-spacing: 2px;
-    background: #02afe4;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #FFFFFF, #02afe4, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #FFFFFF, #02afe4, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      text-align: center;
-    border-radius: 3px;
-    width:280px;
 
-}
-a.printBtn:hover{
-  background: #02afe4;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #FFFFFF, #02afe4, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #FFFFFF, #02afe4, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.58);
-}
+#printButton{
+  background-color: #fff;
+  border: 5px solid #02afe4;  
+  width:280px;
+  color:#02afe4;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);
+  }
+#printButton:hover{
+  background-color: #02afe4;
+  border: 5px solid #02afe4;
+  width:280px;
+  color:#fff;
+  font-weight: bold;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);
+  }
+
 /* After drop receipe, display recipe name */
 .recipeName{
   background-color:transparent;
