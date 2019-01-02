@@ -23,11 +23,11 @@ body{
 }
 
 #mainField{
-    position: absolute;
-    width: 400px;
-    top: 90px;
-    left: 50%;
-    margin-left: -200px;
+    position: relative;
+    width: 80%;
+    /* top: 90px; */
+    left: 10%;
+    /* margin-left: -200px; */
 }
 #footer{
     height: 60px;
@@ -49,7 +49,7 @@ body{
 }
 h1{
     font-family: 'Abel', sans-serif;
-    font-size:1.4rem;
+    font-size:1.2rem;
     font-weight: normal;
     background-image: linear-gradient(to right, #00c3ff, #89d4ab);
     /* background-color: #89d4ab; */
@@ -78,7 +78,7 @@ li:hover .trash {
 input{
     font-family: 'Abel', sans-serif;
     border: 3px solid rgba(0,0,0,0);
-    font-size:1.3rem;
+    font-size:1.1rem;
     background-color: #eee;
     width:100%;
     padding: 10px 10px 10px 20px;
