@@ -11,13 +11,14 @@ a{
     position:fixed;
     font-family: 'Bree Serif', serif;
 } */
+
 footer{
     color:rgb(65, 64, 64); 
     background-color: #fff;          
 }
 h1 {
     font-family: 'Bree Serif', serif;
-    color:gold;
+    color:#02afe4;
     text-align: center;
 }
 

@@ -6,7 +6,7 @@ $(function () {
     const appKey = 'a27fa1a8048f0263635265953ec76ae9';
 
     const Q = 'q=';
-    var ingredient = 'chicken';
+    var ingredient = JSON.parse(localStorage.ingredientArr);
     var selections = [];
 
     // ==========ACCESS TO API  ===================
@@ -72,7 +72,7 @@ $(function () {
         }) // End of GET
 
         $('#finished').on("click", event =>{
-            console.log(JSON.stringify(selections))
+            // console.log(JSON.stringify(selections))
             localStorage.myArrData=JSON.stringify(selections)
         });
         

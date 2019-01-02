@@ -21,7 +21,7 @@ $(function(){
         }
     });
 
-    $('#submitButton').on('click',function(){
+    $('#submitButton').on('click',function(event){
         let ingredients = '';
         for (var j=0; j<(('#mainField ul li').length);j++){
             var li = $('#mainField ul li')[j];
@@ -29,12 +29,13 @@ $(function(){
                 var text = li.innerText;
                 ingredients += text;
                 ingredients += ',';
-                // window.location='https:www.yahoo.com';
+                window.location='result.html';
                 // window.location.pathname = '/new'
+            }
         }
-    }
     ingredients = ingredients.slice(0,-1);
-    console.log(ingredients);
+    // console.log(ingredients);
+    localStorage.ingredientArr=JSON.stringify(ingredients)
     });
 
     $('#mainUl').on('click','li',function(){
