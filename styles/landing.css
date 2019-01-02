@@ -2,6 +2,8 @@
 
 body {
     background-color: #fff;
+    font-family: 'PT Sans', sans-serif;
+
   }
 
 /* -- for md to large devices */
@@ -39,7 +41,7 @@ body {
     padding:0;
 }
   .btn{
-    background-color: #f1c40f;
+    background-color: #02afe4;
     border: none;
     width:150px;
     margin: 10px 20px;

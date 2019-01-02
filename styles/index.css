@@ -1,24 +1,15 @@
 body{
     font-family: 'PT Sans', sans-serif;
     box-sizing: border-box;
-    /* background: #ddd6f3;  fallback for old browsers */
-    /* background: -webkit-linear-gradient(to right, #faaca8, #ddd6f3);  Chrome 10-25, Safari 5.1-6 */
-    /* background: -webkit-linear-gradient(to right, #fffc00, #ffffff );  Chrome 10-25, Safari 5.1-6 */
-    /* background: linear-gradient(to right, #faaca8, #ddd6f3); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /* background-image: linear-gradient(to right, #fdfc47, #24fe41); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     opacity: 1;
 }
 
 #header{
     height: 60px;
-    /* line-height: 60px; */
-    /* background-image: linear-gradient(to right, #00c3ff, #fdfc47); */
     background-color: #02afe4;
     color: white;
     opacity: .9;
-    /* text-align: center; */
     font-family: 'Medula One', cursive;
-    /* font-size: 30px; */
 }
 #mainField{
     position: absolute;
@@ -32,7 +23,6 @@ body{
     width: 100%;
     position: absolute;
     bottom: 0px;
-    /* background-image: url('/img/trippyGreens.jpg'); */
     background-color: #00a8db;
     opacity: .9;
     text-align: center;

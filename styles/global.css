@@ -1,24 +1,26 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'PT Sans', sans-serif;
     color:rgb(65, 64, 64);
     box-sizing: content-box;
 }
 a{
     color:rgb(65, 64, 64);            
 }
-/* nav{
-    background-color: #fff;
-    position:fixed;
-    font-family: 'Bree Serif', serif;
-} */
 
 footer{
     color:rgb(65, 64, 64); 
     background-color: #fff;          
 }
 h1 {
-    font-family: 'Bree Serif', serif;
     color:#02afe4;
     text-align: center;
+}
+
+nav{
+    height: 60px;
+    background-color: #02afe4;
+    color: white;
+    opacity: .9;
+    font-family: 'Medula One', cursive;
 }
 
