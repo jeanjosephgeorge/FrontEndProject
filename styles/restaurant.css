@@ -45,6 +45,13 @@ body {
     z-index: 10;
     font-family: 'Medula One', cursive;
 }
+#footer{
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    background-color: #02afe4;
+    bottom: 0px;
+}
 #logo{
     font-size:30px; 
     color:#02afe4;
