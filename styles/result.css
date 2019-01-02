@@ -3,26 +3,29 @@
 /* button hover work */
 #finished{
     background-color: #fff;
-    border: 5px solid rgb(236, 205, 25);
+    border: 5px solid #02afe4;
     width:280px;
-    color:rgb(236, 205, 25);
+    color:#02afe4;
     font-size: 1.3rem;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-align: center;
-    font-family: 'Bree Serif', serif;
     box-shadow: 0 2px 10px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);
     }
 
 nav{
-    background-color: transparent;
-    font-family: 'Bree Serif', serif;
+    height: 60px;
+    background-color:transparent ;
+    color: #02afe4;
+    opacity: .9;
+    font-family: 'Medula One', cursive;
 }
 
   .parallax {
     position: relative;
     /* The image used */
-    background-image: url("/imgs/result2.png");
+    background-image: url("/imgs/result.png");
+    background-position: 40% 50%;
 
     /* Set a specific height */
     height: 43vh;
@@ -48,7 +51,6 @@ nav{
     padding: 0;
   }
 .textResults{
-    font-family: 'Bree Serif', serif;
     width: 100%;
     text-align: center;
     color:rgb(65, 64, 64);
@@ -71,7 +73,6 @@ nav{
 
 .card-text {
     font-size: 14px;
-    font-family: 'Roboto', sans-serif;
 }
 
 .card-body {
@@ -80,6 +81,5 @@ nav{
 
 .media-text {
     font-size: 14px;
-    font-family: 'Roboto', sans-serif;
 }
 

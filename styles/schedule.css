@@ -20,22 +20,20 @@
 }
 .selectedImg{
     max-width: 150px;
-    /* background: #f1c40f;  fallback for old browsers */
     border-radius: 10px;
     position:relative;
 }
 
 .card{
-    background: #fceabb;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #d8be55, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #f1c40f, #fceabb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    border:none;
-    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.58);
+    /* background: #02afe4;  fallback for old browsers
+    background: -webkit-linear-gradient(to bottom, #FFFFFF, #02afe4, #2980B9);  Chrome 10-25, Safari 5.1-6
+    background: linear-gradient(to bottom, #FFFFFF, #02afe4, #2980B9); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border:1px solid #02afe4;
+    box-shadow: 1px 1px 1px 1px rgba(2,175,228,.58);
     margin:10px;
     padding:5px;
     color:rgb(68, 68, 68);
-    font-family: 'Bree Serif', serif;
+
 }
 
 /* Size changes when hover to card */
@@ -81,7 +79,6 @@
     background:linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
     color:rgb(68, 68, 68);
     border:none;
-    font-family: 'Bree Serif', serif;
     font-size: 14px;
     padding:10px;
   }
@@ -90,23 +87,22 @@
   a.printBtn{
     text-decoration: none;
     display: inline-block;
-    font-family: 'Bree Serif', serif;
     width: 100px;
     color:rgb(68, 68, 68);
     letter-spacing: 2px;
-    background: #fceabb;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #d8be55, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #f1c40f, #fceabb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #02afe4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FFFFFF, #02afe4, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FFFFFF, #02afe4, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       text-align: center;
     border-radius: 3px;
     width:280px;
 
 }
 a.printBtn:hover{
-  background: #fceabb;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #d8be55, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #f1c40f, #fceabb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.58);
+  background: #02afe4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #FFFFFF, #02afe4, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #FFFFFF, #02afe4, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.58);
 }
 /* After drop receipe, display recipe name */
 .recipeName{
