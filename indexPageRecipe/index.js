@@ -29,7 +29,7 @@ $(function(){
                 var text = li.innerText;
                 ingredients += text;
                 ingredients += ',';
-                window.location='https:www.yahoo.com';
+                // window.location='https:www.yahoo.com';
                 // window.location.pathname = '/new'
         }
     }
