@@ -4,7 +4,7 @@ body{
     opacity: 1;
 }
 
-/* #header{
+#header{
     background-color: white;
     border-right: 1px solid white;
     color: #02afe4;
@@ -20,7 +20,7 @@ body{
 .nav-item{
     font-size:25px;
     color:rgb(65, 64, 64); 
-} */
+}
 
 #mainField{
     position: relative;

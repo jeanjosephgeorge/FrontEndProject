@@ -1,5 +1,8 @@
 
 @media print{
+  .col-print{
+    width:14%;
+  }
   .showWhenPrint{
     display: block;
   }
