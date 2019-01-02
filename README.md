@@ -20,6 +20,8 @@ These instructions will get you a copy of the project up and running on your loc
 <li>HTML</li>
 <li>Javascript</li>
 <li>JQuery</li>
+<li>Plugin : <a href="https://github.com/jeanjosephgeorge">imgCheckbox</a></li>
+
 
 <h2>Authors</h2>
 <li><a href="https://github.com/jeanjosephgeorge">Jean George</a></li>

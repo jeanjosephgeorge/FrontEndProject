@@ -11,13 +11,15 @@ body {
     border-color: var(--mainSecondary);
     color: var(--mainSecondary);
     background: white;
+    width:88px;
 }
 .secondaryText {
     color: var(--mainSecondary);
 }
 .searchBtn:hover {
     background: var(--mainSecondary);
-    color: var(--main);
+    /* color: var(--main); */
+    color:white;
 }
 .form-control {
     border-color: var(--mainSecondary);

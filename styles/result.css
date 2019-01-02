@@ -3,7 +3,7 @@
 /* button hover work */
 #finished{
     background-color: #fff;
-    border: 5px solid #02afe4;  
+    border: 3px solid #02afe4;  
     width:280px;
     color:#02afe4;
     font-size: 1.3rem;
@@ -15,7 +15,7 @@
 
     #finished:hover{
     background-color: #02afe4;
-    border: 5px solid #02afe4;
+    border: 3px solid #02afe4;
     width:280px;
     color:#fff;
     font-weight: bold;
