@@ -4,6 +4,6 @@
     display: block;
   }
   @page {
-    size: landscape;
-    margin:25mm 1mm 1mm 1mm;
+    /* size: landscape; */
+    margin:20mm 5mm 5mm 5mm;
 }}

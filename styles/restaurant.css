@@ -35,14 +35,25 @@ body {
 .showItem {
     display: block;
 }
-#header{
-    background-color: #02afe4;
-    font-family: 'Medula One', cursive;
-    line-height: 46px;
-    font-size: 40px;
-    margin: 0 0 23px 0;
 
+#header{
+    background-color: white;
+    border-right: 1px solid white;
+    color: #02afe4;
+    font-size:25px;
+    opacity: .9;
+    z-index: 10;
+    font-family: 'Medula One', cursive;
 }
+#logo{
+    font-size:30px; 
+    color:#02afe4;
+}
+.nav-item{
+    font-size:25px;
+    color:rgb(65, 64, 64); 
+} 
+
 .navbar-brand{
     font-family: 'Medula One', cursive;
     line-height: 46px;

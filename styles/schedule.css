@@ -1,6 +1,8 @@
 
 /* Setting of selected recipies before sorting to calendar */
-
+body{
+  box-sizing: content-box;
+}
 .selectionsDivRow{
   width:100%;
   border-radius: 5%;
@@ -8,9 +10,10 @@
 }
 .selectionsDivText{
   width:100%;
-  margin:10px;
+  margin:10px 5px 0 5px;
   display: flex;
   flex-direction: row;
+  text-align: center;
   justify-content: center;
   color:rgba(68, 68, 68, 0.534);
   font-size: 2rem;
@@ -25,15 +28,11 @@
 }
 
 .card{
-    /* background: #02afe4;  fallback for old browsers
-    background: -webkit-linear-gradient(to bottom, #FFFFFF, #02afe4, #2980B9);  Chrome 10-25, Safari 5.1-6
-    background: linear-gradient(to bottom, #FFFFFF, #02afe4, #2980B9); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border:1px solid #02afe4;
     box-shadow: 1px 1px 1px 1px rgba(2,175,228,.58);
     margin:10px;
     padding:5px;
     color:rgb(68, 68, 68);
-
 }
 
 /* Size changes when hover to card */
