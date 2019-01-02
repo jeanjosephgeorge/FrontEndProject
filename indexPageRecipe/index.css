@@ -11,26 +11,29 @@ body{
 
 #header{
     height: 60px;
-    line-height: 60px;
-    background-image: linear-gradient(to right, #00c3ff, #fdfc47);
-    opacity: .6;
-    text-align: center;
+    /* line-height: 60px; */
+    /* background-image: linear-gradient(to right, #00c3ff, #fdfc47); */
+    background-color: #02afe4;
+    color: white;
+    opacity: .9;
+    /* text-align: center; */
     font-family: 'Medula One', cursive;
-    font-size: 25px;
+    /* font-size: 30px; */
 }
 #mainField{
     position: absolute;
-    top: 80px;
+    top: 90px;
     left: 50%;
     margin-left: -250px;
 }
 #footer{
-    height: 80px;
+    height: 60px;
     width: 100%;
     position: absolute;
     bottom: 0px;
-    background-image: url('/img/trippyGreens.jpg');
-    opacity: .7;
+    /* background-image: url('/img/trippyGreens.jpg'); */
+    background-color: #00a8db;
+    opacity: .9;
 }
 #submitButton{
     font-family: 'Abel', sans-serif;

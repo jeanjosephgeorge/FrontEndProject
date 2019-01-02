@@ -28,7 +28,9 @@ $(function(){
             if (li !== undefined){
                 var text = li.innerText;
                 ingredients += text;
-                ingredients += ','
+                ingredients += ',';
+                window.location='https:www.yahoo.com';
+                // window.location.pathname = '/new'
         }
     }
     ingredients = ingredients.slice(0,-1);
