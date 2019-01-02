@@ -1,6 +1,7 @@
 class ZOMATO {
     constructor(){
-        this.api = "eb8f382511b646ba079a10ecde7ebfa5";
+        // this.api = "eb8f382511b646ba079a10ecde7ebfa5";
+        this.api = "e59aa901d15be0d95cc6b833b07daa19";
         this.header = {
             method:"GET",
             headers:{

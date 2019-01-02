@@ -11,6 +11,7 @@ body {
     border-color: var(--mainSecondary);
     color: var(--mainSecondary);
     background: white;
+    width:88px;
 }
 .secondaryText {
     color: var(--mainSecondary);
