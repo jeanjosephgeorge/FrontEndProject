@@ -2,71 +2,83 @@
 <html lang="en">
 
 <head>
-	<title>Leftover Remix!</title>
+	<title>Mmhmm!</title>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
+    <link href="http://fonts.googleapis.com/css?family=Abel|Medula+One" rel="stylesheet" type="text/css" />
+
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
 	 crossorigin="anonymous">
 	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">	
-     <link rel="stylesheet" href="styles/index.css">
-     <link rel="stylesheet" href="styles/global.css">     
+	 <link rel="stylesheet" href="styles/index.css">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 </head>
 
 <body>
-    <nav id='navbar' class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand text-dark" href="#">LeftoveRemix</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+
+        <!-- <nav id='header' class="navbar navbar-light bg-light">
+                <a class="navbar-brand" href="#">
+                  <img src="/img/download.jpeg" width="40" height="40" class="d-inline-block align-top" alt="">
+                    Leftover Remix
+                </a>
+              </nav> -->
+
+    <!-- <div id="header">
+        <div class="row">
+            <div class="col-2">Leftover Remix</div>
         
-	<div class='main mt-5'>
-		<!-- <h1 class='text-white m-0 p-3 '>  WHAT'S LEFT IN YOUR FRIDGE?
+            <div class="col-6"></div>
+            <div class="col text-right">Home</div>
+            <div class="col text-center">Other stuff</div>
+            <div class="col text-left">About us</div>
+        </div>
+	</div> -->
+	
+	<nav id='header' class="navbar navbar-expand-lg navbar-light">
+			<!-- navbar-light bg-light -->
+		<a class='text-white' style ='font-size:30px' href="#">LEFTOVER REMIX</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse ml-3" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+				<a class="nav-item nav-link active text-black" style ='font-size:25px' href="#">Home <span class="sr-only">(current)</span></a>
+				<a class="nav-item nav-link active text-black" style ='font-size:25px'href="#">Features</a>
+				<a class="nav-item nav-link active text-black" style ='font-size:25px'href="#">Pricing</a>
+
+			</div>
+			</div>
+		</nav>
+
+	<div id='mainField' class='main mt-5'>
+		<h1 class='text-white m-0 p-3 '>  So, what we working with?
 			<i class="fas fa-shopping-basket mr-2"></i>
+			<!-- <i class="fas fa-paw mr-2"></i> -->
+			<i class="fas fa-wine-glass-alt"></i>
 			<span class='plus'>
 				<i class="fas fa-plus float-right"></i>
 			</span>
-        </h1> -->
-        <div>
-            <input id='mainInput' type="text" placeholder="Add New Todo">
-            <span class='plus'>
-                <i class="fas fa-plus float-right"></i>
-            </span>
-        </div>
+		</h1>
+		<input id='mainInput' type="text" placeholder="Add Ingredients Here">
 		<ul id='mainUl' class='list-group list-unstyled m-0 p-0'>
-			<li class='list-item'>
+			<!-- <li class='list-item'>
 				<span class='trash'>
 					<i class="fas fa-trash-alt"></i>
 				</span>
-				Brush Teeth
-			</li>
-		</ul>
+				Brocolli
+			</li> -->
+        </ul>
+        <button id='submitButton' type="button" class="btn btn-warning">I'm hungry</button>
+    </div>
+    
+    <div id="footer">
+        Another blah
 	</div>
+	
+
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script
@@ -77,7 +89,7 @@
 	 crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
 	 crossorigin="anonymous"></script>
-	 <script src='script/todo.js'></script>
+	 <script src='scripts/index.js'></script>
 </body>
 
 </html>
