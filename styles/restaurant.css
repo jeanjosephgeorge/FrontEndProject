@@ -1,7 +1,7 @@
 :root {
     --mainBackground: #f4f4f4 ;
     --main: black;
-    --mainSecondary: blue;
+    --mainSecondary: #02afe4;
 }
 body {
     background: var(--mainBackground);
@@ -45,9 +45,19 @@ body {
     z-index: 10;
     font-family: 'Medula One', cursive;
 }
+#footer{
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    background-color: #02afe4;
+    bottom: 0px;
+}
 #logo{
     font-size:30px; 
     color:#02afe4;
+}
+#searchCategory{
+    border-color: #02afe4;
 }
 .nav-item{
     font-size:25px;
