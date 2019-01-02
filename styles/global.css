@@ -11,10 +11,6 @@ footer{
     color:rgb(65, 64, 64); 
     background-color: #fff;          
 }
-h1 {
-    color:#02afe4;
-    text-align: center;
-}
 
 nav{
     background-color:transparent;
@@ -31,4 +27,10 @@ nav{
 .nav-item{
     font-size:25px;
     color:rgb(65, 64, 64); 
+}
+.nav-item:hover{
+    color:#02afe4;
+}
+.nav-item:active{
+    color:#02afe4;
 }
