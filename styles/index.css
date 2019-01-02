@@ -28,12 +28,14 @@ body{
 }
 #footer{
     height: 60px;
+    line-height: 60px;
     width: 100%;
     position: absolute;
     bottom: 0px;
     /* background-image: url('/img/trippyGreens.jpg'); */
     background-color: #00a8db;
     opacity: .9;
+    text-align: center;
 }
 #submitButton{
     font-family: 'Abel', sans-serif;
