@@ -60,7 +60,7 @@ $(function () {
                     let checked = {
                         recipeName: imgEl.name,
                         recipeUrl:imgEl.alt,
-                        imageUrl:imgEl.src,
+                        imageUrl:imgEl.src
                     }
                     if (isChecked){
                         selections.push(checked)

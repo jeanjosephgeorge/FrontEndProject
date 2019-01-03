@@ -12,7 +12,7 @@ $(function() {
         });
         // image of recipe
         let $imgCard = $('<img>', {
-            "class": 'card-img-top rounded',
+            "class": 'card-img-top rounded hideWhenPrint',
             "src": selections[i]['imageUrl'],
             'name': selections[i]['recipeName'],
             'alt': selections[i]['recipeUrl'],

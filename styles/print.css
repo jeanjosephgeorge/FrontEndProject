@@ -1,12 +1,18 @@
-
 @media print{
-  .col-print{
-    width:14%;
+  body{
+    margin:20mm 10mm 5mm 5mm;
+
   }
+  .col{
+    width:114px !important;
+  }
+
   .showWhenPrint{
     display: block;
   }
+  .hideWhenPrint{
+    display: none;
+  }}
   @page {
-    size: landscape;
-    margin:20mm 5mm 5mm 5mm;
-}}
+    margin:0;
+}
