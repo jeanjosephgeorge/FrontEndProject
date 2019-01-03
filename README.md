@@ -1,6 +1,8 @@
 # *Front-End Project*
 For this project, we have made an app that helps you make a food plan with leftover food that gets collected.Not knowing what to do with certain leftovers is troublesome and letting them continue to spoil adds even more of an annoyance. With this app, learn some recipes that you can put those leftovers towards and plan a weekly meal plan to help with a pace to clear your fridge's space!
 
+Not feeling up to cook today? We can help with that! Use our Restaurant Locater to help find popular restaurants in the area. Showing costs, cuisines, and ratings you'll be able to find the right place for your appetite!
+
 
 
 <h2>Getting Started</h2>
