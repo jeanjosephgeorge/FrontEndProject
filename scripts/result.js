@@ -12,7 +12,7 @@ $(function () {
     // ==========ACCESS TO API  ===================
     $.get(url + Q + ingredient + '&app_id=' + appID + '&app_key=' + appKey)
         .done((result) => {
-            for (let i = 0; i < 3; i++) { // To loop through the 10 results on the page
+            for (let i = 0; i < 10; i++) { // To loop through the 10 results on the page
 
                 // if data exist, put in variables
                 let recipeUrl = (result.hits[i].recipe.url !== '' ? result.hits[i].recipe.url : "");
