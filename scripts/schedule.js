@@ -26,8 +26,8 @@ $(function() {
             "id":'pRecipeName'+i
         });
         let $spanServingSize = $('<span>',{
-            "class":"showWhenPrint",
-            "text":selections[i]['servingSize']
+            "class":"showWhenPrint servingSize",
+            "text":"("+selections[i]['servingSize']+")"
         })
 
         // Name of recipe on hover
