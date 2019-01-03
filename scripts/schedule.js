@@ -1,10 +1,10 @@
 $(function() {
     var selections = JSON.parse(localStorage.myArrData);
-
     for (let i=0;i<selections.length;i++){
         // create image and append to div
+
         let $divSelectedImg = $('<div>', {
-            "class": 'selectedImg m-2',
+            "class": 'selectedImg',
             "draggable":"true",
             "refreshPositions":"true",
             "ondragstart":"drag(event)",

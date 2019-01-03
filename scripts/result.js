@@ -57,6 +57,7 @@ $(function () {
                 onclick: function(el){
                     var isChecked = el.hasClass("imgChked"),
                     imgEl = el.children()[0];  // the img element
+                    // console.log(imgEl)
                     let checked = {
                         recipeName: imgEl.name,
                         recipeUrl:imgEl.alt,

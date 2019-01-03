@@ -25,6 +25,7 @@ body{
     max-width: 150px;
     border-radius: 10px;
     position:relative;
+    margin: 5px auto;
 }
 
 .card{
