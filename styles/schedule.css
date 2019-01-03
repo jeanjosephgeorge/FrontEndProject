@@ -113,7 +113,11 @@ body{
 /* After drop receipe, display recipe name */
 .recipeName{
   background-color:transparent;
+  font-weight: bold;
 }
 .showWhenPrint{
   display: none;
+}
+.ingredients{
+  font-size:11px;
 }

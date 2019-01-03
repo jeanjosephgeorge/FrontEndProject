@@ -18,6 +18,8 @@ $(function () {
                 let recipeUrl = (result.hits[i].recipe.url !== '' ? result.hits[i].recipe.url : "");
                 let imageUrl = (result.hits[i].recipe.image !== '' ? result.hits[i].recipe.image : "");
                 let dishName = (result.hits[i].recipe.label !== '' ? result.hits[i].recipe.label : "");
+
+                let ingredientLines = (result.hits[i].recipe.ingredientLines !== '' ? result.hits[i].recipe.ingredientLines : "");
                 let cookingTime = (result.hits[i].recipe.totalTime !== '' ? result.hits[i].recipe.totalTime :"")+' Minutes';
                 let servingSize = (result.hits[i].recipe.yield !== '' ?result.hits[i].recipe.yield : "")+' Servings';
                 let noOfIngre = (result.hits[i].recipe.ingredientLines.length >0 ? result.hits[i].recipe.ingredientLines.length : "")+' Ingredients';
@@ -32,6 +34,15 @@ $(function () {
                     'alt': recipeUrl,
                     'id' : 'img'+i
                 });
+                let $pIngredients = $('<p>',{ 
+                    'class':'d-none', 
+                    'text':ingredientLines 
+                });
+                let $spanServingSize = $('<span>',{ 
+                    'class':'d-none', 
+                    'text':servingSize 
+                });
+
                 let $divCardBody = $('<div>', {"class": 'card-body'});
                 let $divCardTitle = $('<div>', {"class": 'card-title pt-2'});
                 let $aCardTitle = $('<a>', {
@@ -47,8 +58,13 @@ $(function () {
                 $divCardBody.append($divCardTitle);
                 $divCardBody.append($ulLarge);
 
+                $imgCard.append($pIngredients);
+                $imgCard.append($spanServingSize);
+
                 $divCardMain.append($imgCard);
                 $divCardMain.append($divCardBody);
+
+
                 $divCardCol.append($divCardMain);
                 $('#resultsForBigGuys').append($divCardCol)
             }
@@ -57,11 +73,13 @@ $(function () {
                 onclick: function(el){
                     var isChecked = el.hasClass("imgChked"),
                     imgEl = el.children()[0];  // the img element
-                    // console.log(imgEl)
+                    // console.log(el.children().children())
                     let checked = {
                         recipeName: imgEl.name,
                         recipeUrl:imgEl.alt,
-                        imageUrl:imgEl.src
+                        imageUrl:imgEl.src,
+                        ingredientLines:el.children().children()[0].textContent,
+                        servingSize:el.children().children()[1].textContent
                     }
                     if (isChecked){
                         selections.push(checked)
