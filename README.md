@@ -20,7 +20,9 @@ These instructions will get you a copy of the project up and running on your loc
 <li>HTML</li>
 <li>Javascript</li>
 <li>JQuery</li>
-<li>Plugin : <a href="https://github.com/jeanjosephgeorge">imgCheckbox</a></li>
+<li>Plugin : <a href="https://jcuenod.github.io/imgCheckbox/">imgCheckbox</a></li>
+<li>API: <a href="https://developers.zomato.com/api">Zomato</a></li>
+<li>API: <a href="https://developer.edamam.com/">Edamam</a></li>
 
 
 <h2>Authors</h2>
