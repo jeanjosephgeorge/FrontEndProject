@@ -1,0 +1,92 @@
+/* ===== CSS WORKS FOR RESULT PAGE ===== */
+
+/* button hover work */
+#finished{
+    background-color: #fff;
+    border: 3px solid #02afe4;  
+    width:280px;
+    color:#02afe4;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);
+    }
+
+    #finished:hover{
+    background-color: #02afe4;
+    border: 3px solid #02afe4;
+    width:280px;
+    color:#fff;
+    font-weight: bold;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);
+    }
+
+
+  .parallax {
+    position: relative;
+    /* The image used */
+    background-image: url("/imgs/result.png");
+    background-position: 40% 50%;
+
+    /* Set a specific height */
+    height: 43vh;
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+
+.overlayDirection {
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    overflow: hidden;
+    top: 0px;
+    z-index: 20;
+    margin: 0;
+    width: 100%;
+    height: 43vh;
+    opacity: .2;
+    padding: 0;
+  }
+.textResults{
+    width: 100%;
+    text-align: center;
+    color:#fff;
+    text-shadow: 2px 2px #666;
+    font-size:2rem;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+.card-img-top {
+    width: 100%;
+    max-width: 250px;
+}
+
+.card {
+    margin-bottom: 5px;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+.card-body {
+    padding: 5px;
+}
+
+.media-text {
+    font-size: 14px;
+}
+

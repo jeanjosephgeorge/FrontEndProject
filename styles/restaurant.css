@@ -1,0 +1,108 @@
+:root {
+    --mainBackground: #f4f4f4 ;
+    --main: black;
+    --mainSecondary: #02afe4;
+}
+body {
+    background: var(--mainBackground);
+    color: var(--main);
+}
+.searchBtn {
+    border-color: var(--mainSecondary);
+    color: var(--mainSecondary);
+    background: white;
+    width:88px;
+}
+.secondaryText {
+    color: var(--mainSecondary);
+}
+.searchBtn:hover {
+    background: var(--mainSecondary);
+    /* color: var(--main); */
+    color:white;
+}
+.form-control {
+    border-color: var(--mainSecondary);
+}
+.feedback {
+    display: none;
+}
+.loader {
+    margin: 0 auto;
+    display: none;
+}
+.card p {
+    font-size: 0.7rem;
+}
+.showItem {
+    display: block;
+}
+
+#header{
+    background-color: white;
+    border-right: 1px solid white;
+    color: #02afe4;
+    font-size:25px;
+    opacity: .9;
+    z-index: 10;
+    font-family: 'Medula One', cursive;
+}
+#footer{
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    background-color: #02afe4;
+    bottom: 0px;
+}
+#logo{
+    font-size:30px; 
+    color:#02afe4;
+}
+#searchCategory{
+    border-color: #02afe4;
+}
+.nav-item{
+    font-size:25px;
+    color:rgb(65, 64, 64); 
+} 
+
+.navbar-brand{
+    font-family: 'Medula One', cursive;
+    line-height: 46px;
+    font-size: 40px;
+    margin: 0 0 0px 0;
+}
+h1 {
+    font-family: 'Medula One', cursive;
+    font-weight: normal;
+    line-height: 46px;
+    font-size: 52px;
+    margin: 0 0 23px 0;
+    }
+p {
+    font-family: 'Abel', sans-serif;
+    font-size: 17px;
+    line-height: 23px;
+    margin: 0 0 23px 0;
+}
+.larger-font{
+    font-size: 60px;
+}
+.large-font{
+    font-size:40px;
+}
+.small-font{
+    font-size: 30px;
+}
+.smaller-font{
+    font-size: 18px;
+}
+.color-white{
+    color: white;
+}
+.main-font{
+    font-family: 'Abel', sans-serif;;
+}
+.border-color{
+    border-color:blue;
+}

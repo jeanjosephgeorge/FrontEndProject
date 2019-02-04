@@ -1,0 +1,36 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+    color:rgb(65, 64, 64);
+    box-sizing: content-box;
+}
+/* a{
+    color:rgb(65, 64, 64);            
+} */
+
+footer{
+    color:rgb(65, 64, 64); 
+    background-color: #fff;          
+}
+
+nav{
+    background-color:transparent;
+    border-right: 1px solid white;
+    color: #02afe4;
+    font-size:25px;
+    opacity: .9;
+    font-family: 'Medula One', cursive;
+}
+#logo{
+    font-size:30px; 
+    color:#02afe4;
+}
+.nav-item{
+    font-size:25px;
+    color:rgb(65, 64, 64); 
+}
+.nav-item:hover{
+    color:#02afe4;
+}
+.nav-item:active{
+    color:#02afe4;
+}

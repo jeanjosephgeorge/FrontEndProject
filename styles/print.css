@@ -1,0 +1,18 @@
+@media print{
+  body{
+    margin:20mm 10mm 5mm 5mm;
+
+  }
+  .col{
+    width:114px !important;
+  }
+
+  .showWhenPrint{
+    display: block;
+  }
+  .hideWhenPrint{
+    display: none;
+  }}
+  @page {
+    margin:0;
+}

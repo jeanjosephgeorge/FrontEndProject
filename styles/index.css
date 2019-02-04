@@ -1,0 +1,118 @@
+body{
+    font-family: 'PT Sans', sans-serif;
+    box-sizing: border-box;
+    opacity: 1;
+}
+
+#header{
+    background-color: white;
+    border-right: 1px solid white;
+    color: #02afe4;
+    font-size:25px;
+    opacity: .9;
+    font-family: 'Medula One', cursive;
+    z-index: 10;
+}
+#logo{
+    font-size:30px; 
+    color:#02afe4;
+}
+.nav-item{
+    font-size:25px;
+    color:rgb(65, 64, 64); 
+}
+
+#mainField{
+    position: relative;
+    width: 80%;
+    /* top: 90px; */
+    left: 10%;
+    /* margin-left: -200px; */
+}
+#footer{
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    background-color: #00a8db;
+    opacity: .9;
+    text-align: center;
+}
+#submitButton{
+    font-family: 'Abel', sans-serif;
+    font-size:1.4rem;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-left: 40%;
+    
+}
+h1{
+    font-family: 'Abel', sans-serif;
+    font-size:1.2rem;
+    font-weight: normal;
+    background-image: linear-gradient(to right, #00c3ff, #89d4ab);
+    /* background-color: #89d4ab; */
+    height:53px;
+}
+li{
+    font-family: 'Abel', sans-serif;
+    background-color: #fff;
+    font-size:1.2rem;
+    height: 45px;
+    line-height: 45px;
+    color:#666
+}
+li:nth-child(2n){
+    background-color: #eee;
+}
+li:hover .trash {
+    width:45px;
+    opacity:1;
+}
+.main{
+    /* margin: auto auto; */
+    justify-content: center;
+    width:500px;
+}
+input{
+    font-family: 'Abel', sans-serif;
+    border: 3px solid rgba(0,0,0,0);
+    font-size:1.1rem;
+    background-color: #eee;
+    width:100%;
+    padding: 10px 10px 10px 20px;
+    color:#666 /* #faaca8; */
+}
+input:focus{
+    outline: none;
+    background-color: #fff;
+    border: 3px solid #c6f2ff;
+}
+.completed{
+    color:gray;
+    text-decoration: line-through;
+}
+.cont{
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+}
+.trash{
+    background-color:#e74c3c;
+    height:45px;
+    margin-right:20px;
+    width:0;
+    text-align: center;
+    color:white;
+    display: inline-block;
+    transition: 0.3s linear;
+    opacity:0;
+}
+.hide{
+    display: none;
+}
+
+.thumbnail{
+    border:none !important;
+    background: transparent !important;
+    box-shadow:none !important;
+ }

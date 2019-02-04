@@ -1,0 +1,126 @@
+
+/* Setting of selected recipies before sorting to calendar */
+body{
+  box-sizing: content-box;
+}
+.selectionsDivRow{
+  width:100%;
+  border-radius: 5%;
+
+}
+.selectionsDivText{
+  width:100%;
+  margin:10px 5px 0 5px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  color:rgba(68, 68, 68, 0.534);
+  font-size: 2rem;
+}
+.selectionsDivCol{
+  min-height:100px;
+}
+.selectedImg{
+    max-width: 150px;
+    border-radius: 10px;
+    position:relative;
+    margin: 5px auto;
+}
+
+.card{
+    border:1px solid #02afe4;
+    box-shadow: 1px 1px 1px 1px rgba(2,175,228,.58);
+    margin:10px;
+    padding:5px;
+    color:rgb(68, 68, 68);
+}
+
+/* Size changes when hover to card */
+.card-body{
+  min-height:20px;
+}
+.onHoverHeight{
+  min-height:100px;
+}  
+
+/* Selections on hover show recipe name */
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .textarea {
+    transition: .5s ease;
+    opacity: 0;
+    width:100%;
+    height:100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .selectedImg:hover .image {
+    opacity: 0.3;
+  }
+  
+  .selectedImg:hover .textarea {
+    opacity: 1;
+  }
+  
+  .text {
+    background:linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5));
+    color:rgb(68, 68, 68);
+    border:none;
+    font-size: 14px;
+    font-weight: bold;
+    padding:10px;
+  }
+
+  /* print */
+
+#printButton{
+  background-color: #fff;
+  border: 3px solid #02afe4;  
+  width:280px;
+  color:#02afe4;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);
+  }
+#printButton:hover{
+  background-color: #02afe4;
+  border: 3px solid #02afe4;
+  width:280px;
+  color:#fff;
+  font-weight: bold;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.1);
+  }
+
+/* After drop receipe, display recipe name */
+.recipeName{
+  background-color:transparent;
+  font-weight: bold;
+}
+.showWhenPrint{
+  display: none;
+}
+.ingredients{
+  font-size:14px;
+}
+.servingSize{
+  font-size:16px;
+}

@@ -1,0 +1,115 @@
+/* CSS FOR LANDING PAGE */
+
+body {
+    background-color: black;
+    font-family: 'PT Sans', sans-serif;
+  }
+
+/* -- for md to large devices */
+
+  #landing-header {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    padding-top: 40vh;
+  }
+  #landing-header h1 {
+    font-size:60px;
+    color: rgb(236, 233, 233);
+    text-shadow: 2px 2px #666;
+  }
+
+  /* -- for small devices */
+
+  #landing-header-sm {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    padding-top: 20vh;
+  }
+
+  #landing-header-sm h1 {
+    font-size:50px;
+    color: rgb(236, 233, 233);
+    text-shadow: 2px 2px #666;
+  }
+
+/* All other settings for landing page */
+  .container{
+    margin:0;
+    padding:0;
+}
+  .btn{
+    background-color: #02afe4;
+    border: none;
+    width:150px;
+    margin: 10px 20px;
+  }
+
+  .slideshow { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slideshow li { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 20s linear infinite; 
+  }
+  
+  .slideshow li:nth-child(1) { 
+    background-image: url(https://images.unsplash.com/photo-1506553493793-ccfd9f4371fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2767&q=80) 
+  }
+  .slideshow li:nth-child(2) { 
+    background-image: url(https://images.unsplash.com/photo-1507048331197-7d4ac70811cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2767&q=80);
+    animation-delay: 5s; 
+  }
+  .slideshow li:nth-child(3) { 
+    background-image: url(https://images.unsplash.com/photo-1505826759037-406b40feb4cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2852&q=80);
+    animation-delay: 10s; 
+  }
+  .slideshow li:nth-child(4) { 
+    background-image: url(https://images.unsplash.com/photo-1515036918611-4b7f32b8406c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80);
+    animation-delay: 15s; 
+  }
+  .slideshow li:nth-child(5) { 
+    background-image: url(https://images.unsplash.com/photo-1532597540419-b176991847e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80);
+    animation-delay: 20s; 
+  }
+  
+  @keyframes imageAnimation { 
+    0% { 
+      opacity: 0; 
+      animation-timing-function: ease-in;
+    }
+    10% {
+      opacity: 1;
+      animation-timing-function: ease-out;
+    }
+    20% {
+      opacity: 1
+    }
+    30% {
+      opacity: 0
+    }
+  }
+  
+  /* Older browser support - .no-cssanimations class added by modernizr */
+  .no-cssanimations .slideshow li {
+      opacity: 1;
+  }
