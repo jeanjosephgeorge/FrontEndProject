@@ -14,7 +14,7 @@ footer{
 
 nav{
     background-color:transparent;
-    border-right: 1px solid white;
+    border-right: 1px solid rgb(243, 224, 224);
     color: #02afe4;
     font-size:25px;
     opacity: .9;
@@ -26,6 +26,7 @@ nav{
 }
 .nav-item{
     font-size:25px;
+    margin-right:10px;
     color:rgb(65, 64, 64); 
 }
 .nav-item:hover{
