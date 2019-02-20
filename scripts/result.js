@@ -34,6 +34,7 @@ $(function () {
                     'alt': recipeUrl,
                     'id' : 'img'+i
                 });
+                
                 let $pIngredients = $('<p>',{ 
                     'class':'d-none', 
                     'text':ingredientLines 
